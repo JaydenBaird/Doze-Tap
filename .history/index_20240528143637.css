@@ -57,14 +57,14 @@
 .content {
   position: fixed;
   background-color: #dd8341;
-  top: 50%;
-  width: 80%;
+  top: 40%;
+  width: 100%;
 }
 
 .content:before,
 .content:after {
   content: "";
-  width: 2px; /* color white ("no color") color (each 2px wide); here you can adjust the width */
+  width: 6px; /* color white ("no color") color (each 2px wide); here you can adjust the width */
   height: 0;
   background: linear-gradient(to right, white, white 33.33%, #fff 33.33%, #fff 66.66%, white 66.66%); /* here you can adjust the spacing */
   margin-left: 10%;

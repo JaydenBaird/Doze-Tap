@@ -57,26 +57,26 @@
 .content {
   position: fixed;
   background-color: #dd8341;
-  top: 50%;
-  width: 80%;
+  top: 40%;
+  width: 100%;
+  height: 20%;
+  padding: 20px;
 }
 
-.content:before,
-.content:after {
-  content: "";
-  width: 2px; /* color white ("no color") color (each 2px wide); here you can adjust the width */
-  height: 0;
-  background: linear-gradient(to right, white, white 33.33%, #fff 33.33%, #fff 66.66%, white 66.66%); /* here you can adjust the spacing */
+.vertline {
+  width: 2px;
   margin-left: 10%;
-  position: absolute; /* needs to be absolute */
-  top: 0;
-  animation: lineup 3s forwards;
+  background-color: #dd8341;
+  top: 40%;
+  animation:lineup 3s forwards;
+  position: relative;
 }
 
-.content:after {
-  top: 100%;
-  animation: linedown 3s forwards;
+@keyframes lineup {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 200px;
+  }
 }
-
-@keyframes lineup {100% {top: -200px; height: 200px}}
-@keyframes linedown {100% {height: 200px}}
