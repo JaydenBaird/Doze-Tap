@@ -66,10 +66,10 @@ function checkprice()  {
         Mnoisemachine.disabled = true
     }
     if (points >= Acost) {
-        Macs.disabled = false
+        $acs.disabled = false
     }
     else {
-        Macs.disabled = true
+        $acs.disabled = true
     }
 }
 

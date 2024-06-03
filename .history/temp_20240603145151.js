@@ -51,25 +51,25 @@ function checkprice()  {
         Mpillows.disabled = false
     }
     else {
-        Mpillows.disabled = true
+        $pillows.disabled = true
     }
     if (points >= Bcost) {
-        Mbeds.disabled = false
+        $beds.disabled = false
     }
     else {
         $beds.disabled = true
     }
     if (points >= Ncost) {
-        Mnoisemachine.disabled = false
+        $noisemachine.disabled = false
     }
     else {
-        Mnoisemachine.disabled = true
+        $noisemachine.disabled = true
     }
     if (points >= Acost) {
-        Macs.disabled = false
+        $acs.disabled = false
     }
     else {
-        Macs.disabled = true
+        $acs.disabled = true
     }
 }
 

@@ -69,7 +69,7 @@ function checkprice()  {
         Macs.disabled = false
     }
     else {
-        Macs.disabled = true
+        $acs.disabled = true
     }
 }
 

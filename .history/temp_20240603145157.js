@@ -60,16 +60,16 @@ function checkprice()  {
         $beds.disabled = true
     }
     if (points >= Ncost) {
-        Mnoisemachine.disabled = false
+        noisemachine.disabled = false
     }
     else {
-        Mnoisemachine.disabled = true
+        $noisemachine.disabled = true
     }
     if (points >= Acost) {
-        Macs.disabled = false
+        $acs.disabled = false
     }
     else {
-        Macs.disabled = true
+        $acs.disabled = true
     }
 }
 

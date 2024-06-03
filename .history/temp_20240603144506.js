@@ -41,35 +41,36 @@ function checkprice()  {
     Bcost = 250 + beds ** 2.50
     Ncost = 500 + noisesmachine ** 3.
     Acost = 1000 + acs ** 4.
+    sheet =0
     if (points >= Scost) {
-        Msheets.disabled = false
+        $sheets.disabled = false
     }
     else {
-        Msheets.disabled = true
+        $sheets.disabled = true
     }
     if (points >= Pcost) {
-        Mpillows.disabled = false
+        $pillows.disabled = false
     }
     else {
-        Mpillows.disabled = true
+        $pillows.disabled = true
     }
     if (points >= Bcost) {
-        Mbeds.disabled = false
+        $beds.disabled = false
     }
     else {
         $beds.disabled = true
     }
     if (points >= Ncost) {
-        Mnoisemachine.disabled = false
+        $noisemachine.disabled = false
     }
     else {
-        Mnoisemachine.disabled = true
+        $noisemachine.disabled = true
     }
     if (points >= Acost) {
-        Macs.disabled = false
+        $acs.disabled = false
     }
     else {
-        Macs.disabled = true
+        $acs.disabled = true
     }
 }
 
