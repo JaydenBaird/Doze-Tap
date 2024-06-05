@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doze Tap</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="css-selector" >
+    <div class="container">
+        
+        <div class="Header">
+            <img src="https://see.fontimg.com/api/renderfont4/rgAzK/eyJyIjoiZnMiLCJoIjoyMzgsInciOjIwMDAsImZzIjoxMTksImZnYyI6IiMwMDAwMDAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/ZG96ZSB0YXA/botanic-personal-use-bold.png" alt="Fancy fonts" width="140">
+            <button class="setting-btn">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar1"></span>
+              </button>
+              
+        </div>
+        <div class="Game">
+            <h1 id="tracker">0</h1>
+            <button class="main_button" onclick="increasePoints()"><img src="images/bed-dark-removebg.png" height="100"></button>
+              
+            <h4 id="cps">0 deaths per second</h4> last 2 buttons they don't work that good. The active doesn't work. add music add picture.
+            
+        </div>
+        <div class="content"></div>
+        <div class="Upgrade">
+            <br>
+            <button class="purchase_buttons flex-container" onclick="purchaseSheets()" id="sheetsbtn">
+                <span class="bold" id="sheets">0 Sheets Owned</span>
+                    <img src=".png" width="75">
+                    <span class="bold" id="Scost">Cost: 10</span>
+            </button>
+            <br>
+            <button class="purchase_buttons flex-container" onclick="purchasePillows()" id="Mpillowsbtn">
+                <span class="bold" id="pillows">0 Pillows Owned</span>
+                    <img src="/images/dynamite.png" width="75">
+                    <span class="bold" id="Pcost">Cost: 50</span>
+            </button>
+            <br>
+            <button class="purchase_buttons flex-container" onclick="purchaseBeds()" id="Mbeds">
+                <span class="bold" id="beds">0 Beds Owned</span>
+                    <img src="/images/bomb.png" width="75"> 
+                    <span class="bold" id="Bcost">Cost: 250</span>
+            </button>
+            <br>
+            <button class="purchase_buttons flex-container" onclick="purchaseNoisesmachine()" id="Mnoisemachine">
+                <span class="bold" id="noisemachine">0 Noise machine Owned</span>
+                    <img src="/images/missile.png" width="75">
+                    <span class="bold" id="Ncost">Cost: 500</span>
+            </button> 
+            <br>
+            <button class="purchase_buttons flex-container" onclick="purchaseAcs()" id="Macs">
+                <span class="bold" id="acs">0 Acs Owned</span>
+                    <img src="/images/nuke.png" width="75">
+                    <span class="bold" id="Acost">Cost: 1000</span>
+            </button> 
+        </div>
+
+        <div class="Footer">
+            4
+        </div>
+      </div> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+<script src="temp.js"> </script>
+
+</body>
+</html>

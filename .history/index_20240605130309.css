@@ -1,0 +1,176 @@
+.container {
+    display: grid; 
+    grid-template-columns: .9fr 0.9fr; 
+    grid-template-rows: 0.2fr 2.5fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Header Header"
+      "Game Upgrade"
+      "Footer Footer"; 
+      height: 100vh;
+    text-align: center;
+  }
+  .Header { grid-area: Header;}
+  .Game { grid-area: Game; }
+  .Upgrade { grid-area: Upgrade;}
+  .Footer { grid-area: Footer; }
+
+  .css-selector {
+    background: linear-gradient(223deg, #4158d0, #c850c0, #ffcc70);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    -o-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+button{
+  background: pink;
+}
+
+.content {
+  position: fixed;
+  background-color: #dd8341;
+  top: 50%;
+  width: 80%;
+}
+
+.content:before,
+.content:after {
+  content: "";
+  width: 2px; /* color white ("no color") color (each 2px wide); here you can adjust the width */
+  height: 0;
+  background: linear-gradient(to right, white, white 33.33%, #fff 33.33%, #fff 66.66%, white 66.66%); /* here you can adjust the spacing */
+  margin-left: 10%;
+  position: absolute; /* needs to be absolute */
+  top: 0;
+  animation: lineup 3s forwards;
+}
+
+.content:after {
+  top: 100%;
+  animation: linedown 3s forwards;
+}
+
+@keyframes lineup {100% {top: -200px; height: 200px}}
+@keyframes linedown {100% {height: 200px}}
+
+
+.purchase_buttons {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: green;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:disabled {
+  color: gray;
+  box-shadow: inset 4px 4\4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+button{
+ font-size: 17px;
+ padding: 0.5em 2em;
+ border: transparent;
+ box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+ background: mediumpurple;
+ color: white;
+ border-radius: 4px;
+}
+
+.main_button:hover {
+ background: rgb(2,0,36);
+ background: linear-gradient(90deg, mediumpurple, rgba(255,222,173,1) 100%);
+}
+
+.main_button:active {
+ transform: translate(0em, 0.3em);
+}
+
+.setting-btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: rgb(129, 110, 216);
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 0px 2px rgb(212, 209, 255);
+}
+.bar {
+  width: 50%;
+  height: 2px;
+  background-color: rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 2px;
+}
+.bar::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: rgb(126, 117, 255);
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 5px white;
+}
+.bar1::before {
+  transform: translateX(-4px);
+}
+.bar2::before {
+  transform: translateX(4px);
+}
+.setting-btn:hover .bar1::before {
+  transform: translateX(4px);
+}
+.setting-btn:hover .bar2::before {
+  transform: translateX(-4px);
+}
+.setting-btn {
+  position: fixed;
+  top: 2px;
+  right: 2px;
+}
+
+
+.purchase_buttons:disabled {
+  background-color: red;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
