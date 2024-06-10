@@ -140,7 +140,7 @@ function purchaseAcs () {
         acs = acs + 1
         acsTracker.innerText = acs + " Acs Owned"
         AcostT.innerText = ("Cost: ") + (1000 + acs ** 4.).toFixed(1)
-        
+        bgc
     } else {
         alert("Not enough time! You need at least 10000 seconds to buy Acs")
     }
