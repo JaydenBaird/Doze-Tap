@@ -99,7 +99,9 @@ button{
  background: mediumpurple;
  color: white;
  border-radius: 4px;
-
+ height: 100px;
+ line-height: 100px;
+ text-align: center;
 }
 
 .main_button:hover {

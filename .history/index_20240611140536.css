@@ -99,7 +99,11 @@ button{
  background: mediumpurple;
  color: white;
  border-radius: 4px;
-
+ margin: 0;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
 }
 
 .main_button:hover {

@@ -30,7 +30,7 @@ let bgMusic = new Howl({
     volume: .20,
 })
 
-let Asheets = 1
+let Asheets = 0
 let AsheetsP = 10000
 
 

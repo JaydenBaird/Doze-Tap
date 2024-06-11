@@ -30,7 +30,7 @@ let bgMusic = new Howl({
     volume: .20,
 })
 
-let Asheets = 1
+let Asheets = 0
 let AsheetsP = 10000
 
 
@@ -159,11 +159,11 @@ function autobuy(){
         sheets = sheets + 1
         sheetsTracker.innerText = sheets + ' Sheets Owned'
     }
-    else if  (points >= AsheetsP) {
+    else    (points >= AsheetsP) ;{
         points = points - 10000
-        Asheets = Asheets + 1
+        Asheets
         tracker.innerText = points.toFixed(2) + " Seconds"
-        alert('you will automatically earn 10 sheet a second')
+        alert('you will automatically earn 10 ')
     }
 
 }

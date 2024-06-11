@@ -99,7 +99,6 @@ button{
  background: mediumpurple;
  color: white;
  border-radius: 4px;
-
 }
 
 .main_button:hover {
@@ -163,6 +162,18 @@ button{
   top: 2px;
   right: 2px;
 }
+.center {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
 
+/* If the text has multiple lines, add the following: */
+.center p {
+  line-eight: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 

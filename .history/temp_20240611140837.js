@@ -30,8 +30,8 @@ let bgMusic = new Howl({
     volume: .20,
 })
 
-let Asheets = 1
-let AsheetsP = 10000
+let Asheets = 0
+
 
 
 
@@ -153,22 +153,7 @@ function gameLoop () {
     cpsTracker.innerText = cps + " Seconds of sleep per second"
 }
 
-function autobuy(){
-    if  (Asheets = 1) {
-        tracker.innerText = points.toFixed(2) + " Seconds"
-        sheets = sheets + 1
-        sheetsTracker.innerText = sheets + ' Sheets Owned'
-    }
-    else if  (points >= AsheetsP) {
-        points = points - 10000
-        Asheets = Asheets + 1
-        tracker.innerText = points.toFixed(2) + " Seconds"
-        alert('you will automatically earn 10 sheet a second')
-    }
-
-}
-
-
+function autobuy
 setInterval(gameLoop, 1000)
 setInterval(checkprice, 10)
-setInterval(autobuy, 100)
+
