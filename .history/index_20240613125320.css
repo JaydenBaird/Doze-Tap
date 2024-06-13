@@ -164,7 +164,7 @@ button{
   right: 2px;
 }
 /*------ Settings ------*/
-.container_music {
+.container {
   --color: #a5a5b0;
   --size: 30px;
   display: flex;
@@ -175,39 +175,30 @@ button{
   font-size: var(--size);
   user-select: none;
   fill: var(--color);
-  position: relative;
 }
 
-.container_music .mute {
+.container .mute {
   position: absolute;
   animation: keyframes-fill .5s;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
 }
 
-.container_music .voice {
+.container .voice {
   position: absolute;
   display: none;
   animation: keyframes-fill .5s;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
 }
 
 /* ------ On check event ------ */
-.container_music input:checked ~ .mute {
+.container input:checked ~ .mute {
   display: none;
 }
 
-.container_music input:checked ~ .voice {
+.container input:checked ~ .voice {
   display: block;
 }
 
 /* ------ Hide the default checkbox ------ */
-.container_music input {
+.container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;

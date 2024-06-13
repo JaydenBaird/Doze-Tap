@@ -23,20 +23,15 @@ let Acost = 1000
 let AcostT = document.getElementById("Acost")
 let cps = 0 // cps element
 let cpsTracker = document.getElementById("cps") // tracking the cps
-let Asheets = 0
-let AsheetsP = 10000
-
+let bg = 1
 let bgMusic = new Howl({
     src: ['music/dreams.mp3', 'music/sleep.ogg'],
     autoplay: true,
     volume: .20,
 })
-let zzzMusic = new Howl({
-    src: ["music/zzz.mp3"],
-    volume: .3
-})
 
-
+let Asheets = 1
+let AsheetsP = 10000
 
 
 
@@ -86,7 +81,6 @@ function checkprice()  {
 
 
 function increasePoints () {
-    zzzMusic.play()
     points = points + 1 + (sheets * .2)
     tracker.innerText = points.toFixed(2) +  ' Time Left'
 }
@@ -160,7 +154,7 @@ function gameLoop () {
 }
 
 function autobuy(){
-    if  (Asheets = 0) {
+    if  (Asheets = 1) {
         tracker.innerText = points.toFixed(2) + " Seconds"
         sheets = sheets + 1
         sheetsTracker.innerText = sheets + ' Sheets Owned'
@@ -174,17 +168,18 @@ function autobuy(){
 
 }
 
-function muteMusic() {
+function Music() {
+    if {
     document.getElementById("mutebutton").style.display = "none"
     document.getElementById("playbutton").style.display = "inline-block"
     bgMusic.pause()
 }
-function playMusic() {
+    else{
     document.getElementById("playbutton").style.display = "none"
     document.getElementById("mutebutton").style.display = "inline-block"
     bgMusic.play()
 }
-
+}
 setInterval(gameLoop, 1000)
 setInterval(checkprice, 10)
 setInterval(autobuy, 100)

@@ -31,9 +31,9 @@ let bgMusic = new Howl({
     autoplay: true,
     volume: .20,
 })
-let zzzMusic = new Howl({
-    src: ["music/zzz.mp3"],
-    volume: .3
+let knifesound = new Howl({
+    src: ["audio/knife.mp3"],
+    volume: .4
 })
 
 
@@ -86,7 +86,6 @@ function checkprice()  {
 
 
 function increasePoints () {
-    zzzMusic.play()
     points = points + 1 + (sheets * .2)
     tracker.innerText = points.toFixed(2) +  ' Time Left'
 }

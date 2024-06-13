@@ -181,20 +181,12 @@ button{
 .container_music .mute {
   position: absolute;
   animation: keyframes-fill .5s;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
 }
 
 .container_music .voice {
   position: absolute;
   display: none;
   animation: keyframes-fill .5s;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
 }
 
 /* ------ On check event ------ */

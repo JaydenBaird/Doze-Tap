@@ -86,7 +86,6 @@ function checkprice()  {
 
 
 function increasePoints () {
-    zzzMusic.play()
     points = points + 1 + (sheets * .2)
     tracker.innerText = points.toFixed(2) +  ' Time Left'
 }
